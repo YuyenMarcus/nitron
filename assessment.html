@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Readiness Assessment - Nitron Digital</title>
+    <meta name="description" content="Take our comprehensive AI readiness assessment to evaluate your organization's preparedness for AI automation and digital transformation.">
+    <meta name="keywords" content="AI readiness assessment, AI automation evaluation, digital transformation assessment, business automation readiness">
+    <meta name="author" content="Nitron Digital LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nitron.digital/assessment.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg" style="filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);">
+    <link rel="icon" type="image/png" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitron.digital/assessment.html">
+    <meta property="og:title" content="AI Readiness Assessment - Nitron Digital">
+    <meta property="og:description" content="Take our comprehensive AI readiness assessment to evaluate your organization's preparedness for AI automation.">
+    <meta property="og:image" content="https://nitron.digital/logo.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nitron.digital/assessment.html">
+    <meta property="twitter:title" content="AI Readiness Assessment - Nitron Digital">
+    <meta property="twitter:description" content="Take our comprehensive AI readiness assessment to evaluate your organization's preparedness for AI automation.">
+    <meta property="twitter:image" content="https://nitron.digital/logo.svg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.svg" alt="Nitron Digital Logo" class="logo-img">
+                    <span class="logo-text">Nitron Digital</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="assessment.html">AI Readiness Assessment</a>
+                        <a href="roi-calculator.html">AI ROI Calculator</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-btn">Request Assessment</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>AI Readiness Assessment</h1>
+            <p>Complete this short assessment to evaluate your organization's readiness for AI implementation and receive personalized recommendations</p>
+        </div>
+    </section>
+
+    <!-- Assessment Section -->
+    <section class="assessment-section">
+        <div class="container">
+            <div class="assessment-content">
+                <div class="assessment-info">
+                    <h2>Assess Your AI Readiness</h2>
+                    <p>This assessment evaluates five key areas of AI readiness to help you understand your organization's current position and identify opportunities for improvement.</p>
+                    
+                    <div class="assessment-areas">
+                        <div class="area-item">
+                            <div class="area-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="area-text">
+                                <h4>Data Quality & Accessibility</h4>
+                                <p>Evaluate the quality, organization, and accessibility of your data infrastructure.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item">
+                            <div class="area-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="area-text">
+                                <h4>Technology Infrastructure</h4>
+                                <p>Assess your current technology stack and infrastructure readiness for AI implementation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item">
+                            <div class="area-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="area-text">
+                                <h4>Organizational Culture & Skills</h4>
+                                <p>Evaluate your team's readiness and cultural alignment for AI adoption.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item">
+                            <div class="area-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="area-text">
+                                <h4>Process Automation Potential</h4>
+                                <p>Identify processes that could benefit from AI automation and optimization.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item">
+                            <div class="area-icon">
+                                <i class="fas fa-target"></i>
+                            </div>
+                            <div class="area-text">
+                                <h4>Strategic Alignment</h4>
+                                <p>Assess how well AI initiatives align with your overall business strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="assessment-form">
+                    <div class="form-header">
+                        <h3>Assessment Questions</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="progress-text">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">15</span></p>
+                    </div>
+                    
+                    <form id="assessmentForm">
+                        <div class="question-container" id="questionContainer">
+                            <!-- Questions will be dynamically loaded here -->
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" id="prevBtn" class="secondary-button" style="display: none;">Previous</button>
+                            <button type="button" id="nextBtn" class="cta-button">Next</button>
+                            <button type="submit" id="submitBtn" class="cta-button" style="display: none;">Get Results</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Hidden by default) -->
+    <section class="results-section" id="resultsSection" style="display: none;">
+        <div class="container">
+            <h2>Your AI Readiness Results</h2>
+            <div class="results-content">
+                <div class="overall-score">
+                    <div class="score-circle">
+                        <span id="overallScore">0</span>
+                        <small>/100</small>
+                    </div>
+                    <h3>Overall Readiness Score</h3>
+                    <p id="scoreDescription">Your organization shows potential for AI implementation with some areas for improvement.</p>
+                </div>
+                
+                <div class="area-scores">
+                    <h3>Area Breakdown</h3>
+                    <div class="score-bars">
+                        <div class="score-bar">
+                            <div class="bar-label">
+                                <span>Data Quality & Accessibility</span>
+                                <span id="dataScore">0%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="dataBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="score-bar">
+                            <div class="bar-label">
+                                <span>Technology Infrastructure</span>
+                                <span id="techScore">0%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="techBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="score-bar">
+                            <div class="bar-label">
+                                <span>Organizational Culture & Skills</span>
+                                <span id="cultureScore">0%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="cultureBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="score-bar">
+                            <div class="bar-label">
+                                <span>Process Automation Potential</span>
+                                <span id="processScore">0%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="processBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="score-bar">
+                            <div class="bar-label">
+                                <span>Strategic Alignment</span>
+                                <span id="strategyScore">0%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" id="strategyBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recommendations">
+                    <h3>Recommendations</h3>
+                    <div id="recommendationsList">
+                        <!-- Recommendations will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <div class="results-cta">
+                    <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+                    <a href="assessment.html" class="secondary-button">Take Assessment Again</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your AI Journey?</h2>
+            <p>Take our AI readiness assessment to see how your organization can benefit from strategic AI integration.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Nitron Digital Logo" class="footer-logo-img">
+                        <h3>Nitron Digital LLC</h3>
+                    </div>
+                    <p>Transforming mid-market companies through strategic AI integration, workflow automation, and operational optimization.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="assessment.html">AI Readiness Assessment</a></li>
+                        <li><a href="roi-calculator.html">AI ROI Calculator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">AI Readiness Assessment</a></li>
+                        <li><a href="services.html">Custom Integration</a></li>
+                        <li><a href="services.html">Process Optimization</a></li>
+                        <li><a href="services.html">Data Orchestration</a></li>
+                        <li><a href="services.html">AI Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 923 Elm Street<br>Manchester, NH 03101</p>
+                    <p><i class="fas fa-envelope"></i> admin@nitron.digital</p>
+                    <p><i class="fas fa-phone"></i> (833) 3-NITRON</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nitron Digital LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="assessment.js"></script>
+</body>
+</html> 

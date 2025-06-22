@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ROI Calculator - Nitron Digital</title>
+    <meta name="description" content="Calculate the potential ROI of AI automation for your business. Use our comprehensive ROI calculator to estimate cost savings and efficiency gains.">
+    <meta name="keywords" content="AI ROI calculator, automation ROI, business automation ROI, AI investment calculator, cost savings calculator">
+    <meta name="author" content="Nitron Digital LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nitron.digital/roi-calculator.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg" style="filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);">
+    <link rel="icon" type="image/png" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitron.digital/roi-calculator.html">
+    <meta property="og:title" content="AI ROI Calculator - Nitron Digital">
+    <meta property="og:description" content="Calculate the potential ROI of AI automation for your business with our comprehensive calculator.">
+    <meta property="og:image" content="https://nitron.digital/logo.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nitron.digital/roi-calculator.html">
+    <meta property="twitter:title" content="AI ROI Calculator - Nitron Digital">
+    <meta property="twitter:description" content="Calculate the potential ROI of AI automation for your business with our comprehensive calculator.">
+    <meta property="twitter:image" content="https://nitron.digital/logo.svg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.svg" alt="Nitron Digital Logo" class="logo-img">
+                    <span class="logo-text">Nitron Digital</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="assessment.html">AI Readiness Assessment</a>
+                        <a href="roi-calculator.html">AI ROI Calculator</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">Login</a>
+                <a href="contact.html" class="nav-btn">Request Assessment</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>AI ROI Calculator</h1>
+            <p>Calculate the potential return on investment for your AI implementation project</p>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-info">
+                    <h2>Calculate Your AI ROI</h2>
+                    <p>Use this calculator to estimate the potential return on investment for implementing AI solutions in your organization. Input your current metrics and see the projected benefits.</p>
+                    
+                    <div class="calculator-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Cost Savings</h4>
+                                <p>Reduce manual processes and operational costs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Time Efficiency</h4>
+                                <p>Automate repetitive tasks and increase productivity</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Revenue Growth</h4>
+                                <p>Improve decision-making and customer experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="calculator-form">
+                    <h3>ROI Calculator</h3>
+                    <form id="roiCalculator">
+                        <div class="form-group">
+                            <label for="annualRevenue">Annual Revenue ($): <span id="annualRevenueValue">1000000</span></label>
+                            <input type="range" id="annualRevenue" name="annualRevenue" min="100000" max="10000000" step="10000" value="1000000" oninput="annualRevenueValue.textContent = this.value">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="employees">Number of Employees: <span id="employeesValue">50</span></label>
+                            <input type="range" id="employees" name="employees" min="1" max="500" step="1" value="50" oninput="employeesValue.textContent = this.value">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="avgSalary">Average Employee Salary ($): <span id="avgSalaryValue">60000</span></label>
+                            <input type="range" id="avgSalary" name="avgSalary" min="20000" max="250000" step="1000" value="60000" oninput="avgSalaryValue.textContent = this.value">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="manualHours">Manual Hours per Week: <span id="manualHoursValue">20</span></label>
+                            <input type="range" id="manualHours" name="manualHours" min="0" max="40" step="1" value="20" oninput="manualHoursValue.textContent = this.value">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="implementationCost">Implementation Cost ($): <span id="implementationCostValue">100000</span></label>
+                            <input type="range" id="implementationCost" name="implementationCost" min="10000" max="1000000" step="10000" value="100000" oninput="implementationCostValue.textContent = this.value">
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Calculate ROI</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section (Hidden by default) -->
+    <section class="roi-results" id="roiResults" style="display: none;">
+        <div class="container">
+            <h2>Your AI ROI Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>ROI Percentage</h3>
+                    <div class="result-value" id="roiPercentage">0%</div>
+                    <p>Return on investment percentage</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Annual Savings</h3>
+                    <div class="result-value" id="annualSavings">$0</div>
+                    <p>Estimated annual cost savings</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Saved</h3>
+                    <div class="result-value" id="timeSaved">0 hours</div>
+                    <p>Annual time savings in hours</p>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Payback Period</h3>
+                    <div class="result-value" id="paybackPeriod">0 months</div>
+                    <p>Time to recover implementation costs</p>
+                </div>
+            </div>
+            
+            <div class="roi-breakdown">
+                <h3>Detailed Breakdown</h3>
+                <div class="breakdown-content">
+                    <div class="breakdown-item">
+                        <span>Current Annual Labor Cost:</span>
+                        <span id="currentLaborCost">$0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Projected Annual Labor Cost (with AI):</span>
+                        <span id="projectedLaborCost">$0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Implementation Cost:</span>
+                        <span id="totalImplementationCost">$0</span>
+                    </div>
+                    <div class="breakdown-item total">
+                        <span>Net Annual Benefit:</span>
+                        <span id="netBenefit">$0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="roi-cta">
+                <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+                <a href="roi-calculator.html" class="secondary-button">Calculate Again</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your AI Journey?</h2>
+            <p>Take our AI readiness assessment to see how your organization can benefit from strategic AI integration.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Nitron Digital Logo" class="footer-logo-img">
+                        <h3>Nitron Digital LLC</h3>
+                    </div>
+                    <p>Transforming mid-market companies through strategic AI integration, workflow automation, and operational optimization.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="assessment.html">AI Readiness Assessment</a></li>
+                        <li><a href="roi-calculator.html">AI ROI Calculator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">AI Readiness Assessment</a></li>
+                        <li><a href="services.html">Custom Integration</a></li>
+                        <li><a href="services.html">Process Optimization</a></li>
+                        <li><a href="services.html">Data Orchestration</a></li>
+                        <li><a href="services.html">AI Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 923 Elm Street<br>Manchester, NH 03101</p>
+                    <p><i class="fas fa-envelope"></i> admin@nitron.digital</p>
+                    <p><i class="fas fa-phone"></i> (833) 3-NITRON</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nitron Digital LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="roi-calculator.js"></script>
+</body>
+</html> 
