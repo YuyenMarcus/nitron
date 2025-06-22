@@ -1541,7 +1541,6 @@ p {
     overflow: hidden;
 }
 
-.service-card > *:not(.border-beam-component) {
     position: relative;
     z-index: 2;
 }
@@ -1667,7 +1666,6 @@ p {
     overflow: hidden;
 }
 
-.feature-item > *:not(.border-beam-component) {
     position: relative;
     z-index: 2;
 }
@@ -2307,7 +2305,6 @@ p {
     overflow: hidden;
 }
 
-.transform-card > *:not(.border-beam-component) {
     position: relative;
     z-index: 2;
 }
@@ -2431,7 +2428,6 @@ p {
     overflow: hidden;
 }
 
-.methodology-step > *:not(.border-beam-component) {
     position: relative;
     z-index: 2;
 }
@@ -2479,7 +2475,6 @@ p {
 }
 
 /* BorderBeam Component for Service Cards */
-.border-beam-component {
     position: absolute;
     top: 0;
     left: 0;
@@ -2491,7 +2486,6 @@ p {
     overflow: hidden;
 }
 
-.border-beam-component::before {
     content: '';
     position: absolute;
     top: 0;
@@ -2508,14 +2502,12 @@ p {
         rgba(70, 130, 180, 0.8) 100%
     );
     background-size: 200% 200%;
-    animation: borderBeamMove 8s linear infinite;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
 }
 
-@keyframes borderBeamMove {
     0% {
         background-position: 0% 0%;
     }
